@@ -1,0 +1,25 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_unclear
+config:
+  store_entities_as_slots: true
+entities:
+- loc_type
+forms: []
+intents:
+- greet:
+    use_entities: true
+slots:
+  loc_type:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_greet:
+  - text: Bạn có thể cho Teemo Bot biết tên được không?
+  - text: Chào bạn, tôi có thể giúp được g?
+  utter_unclear:
+  - text: Teemo Bot chưa hiểu câu hỏi của bạn lắm, bạn nói cụ thể hơn được không?
+  - text: Xin lỗi bạn, Teemo Bot không biết chút gì về lĩnh vực này cả :(

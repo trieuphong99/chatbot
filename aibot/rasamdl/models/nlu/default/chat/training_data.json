@@ -1,0 +1,53 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "chào anh"
+      },
+      {
+        "intent": "greet",
+        "text": "chào em"
+      },
+      {
+        "intent": "greet",
+        "text": "chào"
+      },
+      {
+        "intent": "greet",
+        "text": "em khoẻ không"
+      },
+      {
+        "intent": "timetable",
+        "text": "lịch học"
+      },
+      {
+        "intent": "timetable",
+        "text": "thông báo lịch học"
+      },
+      {
+        "intent": "timetable",
+        "text": "thời khóa biểu"
+      },
+      {
+        "intent": "place",
+        "text": "cho tôi hỏi địa điểm của trung tâm"
+      },
+      {
+        "intent": "place",
+        "text": "địa điểm"
+      },
+      {
+        "intent": "place",
+        "text": "nổ địa chỉ của trung tâm đi em"
+      },
+      {
+        "intent": "place",
+        "text": "mình học ở đâu nhỉ"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}

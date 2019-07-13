@@ -1,0 +1,34 @@
+intents:
+# Ý đồ khách hàng
+ - greet
+ - place
+ - timetable
+ 
+entities:
+# Các thực thể
+ - loc_type
+
+
+slots:
+  
+  loc_type:
+    auto_fill: true
+    type: text
+
+templates:
+# Bot trả lời
+ utter_greet:
+  - text: "Bạn có thể cho Teemo Bot biết tên được không?"
+  - text: "Chào bạn, tôi có thể giúp được g?"
+ utter_unclear:
+  - text: "Teemo Bot chưa hiểu câu hỏi của bạn lắm, bạn nói cụ thể hơn được không?"
+  - text: "Xin lỗi bạn, Teemo Bot không biết chút gì về lĩnh vực này cả :("
+
+
+
+actions:
+# templates (as they are reply actions),
+# also custom actions if any
+ - utter_greet
+ - utter_unclear
+ 
